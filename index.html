@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Semaforo</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+<div class="container" id="container">
+    <div class="signal">
+        <div class="light green" id="green"></div>
+        <div class="light yellow" id="yellow"></div>
+        <div class="light red" id="red"></div>
+    </div>
+    <button id="start-button" onclick="start()" title="Toggle semaphore">
+        <img src="on.svg" width="35" alt="Toggle semaphore svg icon"/>
+    </button>
+</div>
+<audio src="state-changed.mp3" id="state-changed"></audio>
+<script src="index.js"></script>
+</body>
+</html>
