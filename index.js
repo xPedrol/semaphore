@@ -65,6 +65,7 @@ const inactiveAll = () => {
 
 const resetAll = () => {
     inactiveAll();
+    container.classList.remove("container-inactive-yellow");
     greenLight.color = "green";
     redLight.color = "red";
 };
